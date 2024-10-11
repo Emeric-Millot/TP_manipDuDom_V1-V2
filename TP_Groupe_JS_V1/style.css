@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: "EBGaramond-VariableFont_wght";
+  src: url(../fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+/* Style body */
+body {
+  font-family: "EBGaramond-VariableFont_wght";
+  background-color: #000000;
+  margin: 0;
+  padding: 3rem;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#form {
+  background: #e6e6e6;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 0.15rem solid #ccc;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #460a4c;
+  color: white;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  font-family: "EBGaramond-VariableFont_wght";
+  font-size: 1rem;
+}
+
+
+#list button {
+  background-color: #460a4c;
+  margin-right: 1rem;
+}
+
+#list button:hover {
+  background-color: #1eac2a;
+}
+
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: rgb(6, 6, 6);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 1px solid grey;
+  }
+
+  .fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  
+  .todo li {
+    flex: 1;
+  }
+
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+    width: 60%;
+    margin: 10px auto;
+  }
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
